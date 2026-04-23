@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Расписание футбольных матчей — купи билеты онлайн на GoalPass">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="../js/script.js" defer></script>
+  <title>Матчи — GoalPass</title>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="../index.html"><span class="ball">⚽</span> Goal<span>Pass</span></a>
+  <nav id="main-nav">
+    <a href="../index.html">Главная</a>
+    <a href="matches.html" class="active">Матчи</a>
+    <a href="stadium.html">Стадион</a>
+    <a href="clubs.html">Клубы</a>
+    <a href="contacts.html">Контакты</a>
+    <a href="matches.html" class="nav-cta">Купить билет</a>
+  </nav>
+  <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></i>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="section-label">🗓 Расписание</div>
+      <h1>Все матчи</h1>
+      <p>Домашние игры сезона 2025/2026 — выбирай и покупай билеты онлайн</p>
+    </div>
+  </div>
+
+  <section id="matches" style="background: var(--coal);">
+    <div class="matches-wrapper">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Все матчи</button>
+        <button class="filter-btn" data-filter="natdiv">Нац. Дивизия</button>
+        <button class="filter-btn" data-filter="ecl">Лига Конференций</button>
+        <button class="filter-btn" data-filter="national">Сборная</button>
+        <button class="filter-btn" data-filter="friendly">Товарищеские</button>
+      </div>
+
+      <div class="matches-grid">
+        <div class="match-card" data-league="natdiv">
+          <div class="match-league">
+            <span class="league-name">🇲🇩 Национальная дивизия</span>
+            <span class="match-date-badge">28 апр · 19:00</span>
+          </div>
+          <div class="match-body">
+            <div class="teams-row">
+              <div class="team"><div class="team-crest">🔵</div><div class="team-name">FC Milsami</div></div>
+              <div class="vs-block"><div class="vs-time">19:00</div><div class="vs-sep">vs</div></div>
+              <div class="team"><div class="team-crest">🔴</div><div class="team-name">FC Sheriff</div></div>
+            </div>
+            <div class="match-footer">
+              <div class="ticket-price"><div class="price-from">от</div><div class="price-val">150 <span>леев</span></div></div>
+              <a href="#" class="btn-ticket">Купить →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-card" data-league="ecl">
+          <div class="match-league">
+            <span class="league-name">🇪🇺 Лига Конференций УЕФА</span>
+            <span class="match-date-badge">8 мая · 21:00</span>
+          </div>
+          <div class="match-body">
+            <div class="teams-row">
+              <div class="team"><div class="team-crest">🔴</div><div class="team-name">FC Sheriff</div></div>
+              <div class="vs-block"><div class="vs-time">21:00</div><div class="vs-sep">vs</div></div>
+              <div class="team"><div class="team-crest">🟠</div><div class="team-name">Feyenoord</div></div>
+            </div>
+            <div class="match-footer">
+              <div class="ticket-price"><div class="price-from">от</div><div class="price-val">400 <span>леев</span></div></div>
+              <a href="#" class="btn-ticket">Купить →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-card" data-league="natdiv">
+          <div class="match-league">
+            <span class="league-name">🇲🇩 Национальная дивизия</span>
+            <span class="match-date-badge">3 мая · 17:00</span>
+          </div>
+          <div class="match-body">
+            <div class="teams-row">
+              <div class="team"><div class="team-crest">🟡</div><div class="team-name">Petrocub</div></div>
+              <div class="vs-block"><div class="vs-time">17:00</div><div class="vs-sep">vs</div></div>
+              <div class="team"><div class="team-crest">⚪</div><div class="team-name">Zimbru</div></div>
+            </div>
+            <div class="match-footer">
+              <div class="ticket-price"><div class="price-from">от</div><div class="price-val">100 <span>леев</span></div></div>
+              <a href="#" class="btn-ticket">Купить →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-card" data-league="national">
+          <div class="match-league">
+            <span class="league-name">🌍 Лига наций УЕФА</span>
+            <span class="match-date-badge">5 июн · 20:45</span>
+          </div>
+          <div class="match-body">
+            <div class="teams-row">
+              <div class="team"><div class="team-crest">🇲🇩</div><div class="team-name">Молдова</div></div>
+              <div class="vs-block"><div class="vs-time">20:45</div><div class="vs-sep">vs</div></div>
+              <div class="team"><div class="team-crest">🇬🇪</div><div class="team-name">Грузия</div></div>
+            </div>
+            <div class="match-footer">
+              <div class="ticket-price"><div class="price-from">от</div><div class="price-val">200 <span>леев</span></div></div>
+              <a href="#" class="btn-ticket">Купить →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-card" data-league="ecl">
+          <div class="match-league">
+            <span class="league-name">🇪🇺 Лига Конференций УЕФА</span>
+            <span class="match-date-badge">15 мая · 20:45</span>
+          </div>
+          <div class="match-body">
+            <div class="teams-row">
+              <div class="team"><div class="team-crest">🔴</div><div class="team-name">FC Sheriff</div></div>
+              <div class="vs-block"><div class="vs-time">20:45</div><div class="vs-sep">vs</div></div>
+              <div class="team"><div class="team-crest">🔵</div><div class="team-name">Porto</div></div>
+            </div>
+            <div class="match-footer">
+              <div class="ticket-price"><div class="price-from">от</div><div class="price-val">550 <span>леев</span></div></div>
+              <a href="#" class="btn-ticket">Купить →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-card" data-league="friendly">
+          <div class="match-league">
+            <span class="league-name">🤝 Товарищеский матч</span>
+            <span class="match-date-badge">20 мая · 18:00</span>
+          </div>
+          <div class="match-body">
+            <div class="teams-row">
+              <div class="team"><div class="team-crest">🇲🇩</div><div class="team-name">Молдова U-21</div></div>
+              <div class="vs-block"><div class="vs-time">18:00</div><div class="vs-sep">vs</div></div>
+              <div class="team"><div class="team-crest">🇷🇴</div><div class="team-name">Румыния U-21</div></div>
+            </div>
+            <div class="match-footer">
+              <div class="ticket-price"><div class="price-from">от</div><div class="price-val">80 <span>леев</span></div></div>
+              <a href="#" class="btn-ticket">Купить →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="../index.html"><span class="ball">⚽</span> Goal<span>Pass</span></a>
+      <p>Официальная платформа продажи билетов на футбольные матчи Молдовы.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="matches.html">Матчи</a></li>
+        <li><a href="stadium.html">Стадион</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Поддержка</h4>
+      <ul>
+        <li><a href="contacts.html">FAQ</a></li>
+        <li><a href="contacts.html">Возврат</a></li>
+        <li><a href="contacts.html">Связаться</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Турниры</h4>
+      <ul>
+        <li><a href="matches.html">Нац. Дивизия</a></li>
+        <li><a href="matches.html">Кубок Молдовы</a></li>
+        <li><a href="matches.html">Лига Конференций</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© GoalPass — <span id="footer-year">2026</span></span>
+    <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Наверх</a>
+  </div>
+</footer>
+
+<div id="back-top" title="Наверх"><i class="fa-solid fa-chevron-up"></i></div>
+</body>
+</html>

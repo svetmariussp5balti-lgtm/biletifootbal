@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="../js/script.js" defer></script>
+  <title>Клубы — GoalPass</title>
+  <style>
+    .clubs-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+    .club-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 10px; padding: 32px 24px; text-align: center; transition: border-color 0.25s, transform 0.25s; opacity: 0; transform: translateY(20px); }
+    .club-card.visible { opacity: 1; transform: none; transition: opacity 0.5s, transform 0.5s, border-color 0.25s; }
+    .club-card:hover { border-color: rgba(29,185,84,0.35); transform: translateY(-4px); }
+    .club-emoji { font-size: 52px; margin-bottom: 12px; }
+    .club-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; color: var(--white); letter-spacing: 0.5px; margin-bottom: 6px; }
+    .club-card p { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 20px; }
+    .club-matches { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--pitch); margin-bottom: 16px; }
+    .club-btn { display: inline-block; padding: 10px 24px; border: 1px solid var(--card-border); border-radius: 6px; font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--text); text-decoration: none; transition: all 0.2s; }
+    .club-btn:hover { border-color: var(--pitch); color: var(--pitch); }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="../index.html"><span class="ball">⚽</span> Goal<span>Pass</span></a>
+  <nav id="main-nav">
+    <a href="../index.html">Главная</a>
+    <a href="matches.html">Матчи</a>
+    <a href="stadium.html">Стадион</a>
+    <a href="clubs.html" class="active">Клубы</a>
+    <a href="contacts.html">Контакты</a>
+    <a href="matches.html" class="nav-cta">Купить билет</a>
+  </nav>
+  <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></i>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="section-label">🏆 Клубы</div>
+      <h1>Клубы и лиги</h1>
+      <p>Все партнёрские клубы GoalPass — покупай билеты на их домашние матчи</p>
+    </div>
+  </div>
+
+  <section style="background: var(--coal);">
+    <div class="clubs-grid">
+      <div class="club-card">
+        <div class="club-emoji">🔴</div>
+        <h3>FC Sheriff</h3>
+        <p>Самый титулованный клуб Молдовы. Многократный чемпион страны, участник еврокубков.</p>
+        <div class="club-matches">12 матчей в продаже</div>
+        <a href="matches.html" class="club-btn">Билеты →</a>
+      </div>
+      <div class="club-card">
+        <div class="club-emoji">⚪</div>
+        <h3>FC Zimbru</h3>
+        <p>Легендарный клуб Кишинёва. Основан в 1947 году, один из первых чемпионов Молдовы.</p>
+        <div class="club-matches">8 матчей в продаже</div>
+        <a href="matches.html" class="club-btn">Билеты →</a>
+      </div>
+      <div class="club-card">
+        <div class="club-emoji">🟡</div>
+        <h3>FC Petrocub</h3>
+        <p>Клуб из Хынчешт — один из лидеров Национальной дивизии последних сезонов.</p>
+        <div class="club-matches">6 матчей в продаже</div>
+        <a href="matches.html" class="club-btn">Билеты →</a>
+      </div>
+      <div class="club-card">
+        <div class="club-emoji">🔵</div>
+        <h3>FC Milsami</h3>
+        <p>Клуб из Орхея. Стабильный участник еврокубков, известен воспитанием молодых игроков.</p>
+        <div class="club-matches">7 матчей в продаже</div>
+        <a href="matches.html" class="club-btn">Билеты →</a>
+      </div>
+      <div class="club-card">
+        <div class="club-emoji">🟢</div>
+        <h3>FC Sfîntul Gheorghe</h3>
+        <p>Молодой амбициозный клуб, быстро поднявшийся в высший дивизион Молдовы.</p>
+        <div class="club-matches">5 матчей в продаже</div>
+        <a href="matches.html" class="club-btn">Билеты →</a>
+      </div>
+      <div class="club-card">
+        <div class="club-emoji">🔴</div>
+        <h3>FC Dinamo-Auto</h3>
+        <p>Клуб из Тирасполя. Активный участник национального чемпионата и Кубка Молдовы.</p>
+        <div class="club-matches">4 матча в продаже</div>
+        <a href="matches.html" class="club-btn">Билеты →</a>
+      </div>
+      <div class="club-card">
+        <div class="club-emoji">🇲🇩</div>
+        <h3>Сборная Молдовы</h3>
+        <p>Национальная сборная выступает в Лиге наций УЕФА и отборочных матчах чемпионатов Европы.</p>
+        <div class="club-matches">3 домашних матча</div>
+        <a href="matches.html" class="club-btn">Билеты →</a>
+      </div>
+      <div class="club-card">
+        <div class="club-emoji">⭐</div>
+        <h3>FC Florești</h3>
+        <p>Дебютант высшего дивизиона этого сезона — один из самых ожидаемых новичков года.</p>
+        <div class="club-matches">5 матчей в продаже</div>
+        <a href="matches.html" class="club-btn">Билеты →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="../index.html"><span class="ball">⚽</span> Goal<span>Pass</span></a>
+      <p>Официальная платформа продажи билетов на футбол в Молдове.</p>
+    </div>
+    <div class="footer-col"><h4>Навигация</h4><ul>
+      <li><a href="../index.html">Главная</a></li>
+      <li><a href="matches.html">Матчи</a></li>
+      <li><a href="stadium.html">Стадион</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Клубы</h4><ul>
+      <li><a href="clubs.html">FC Sheriff</a></li>
+      <li><a href="clubs.html">FC Zimbru</a></li>
+      <li><a href="clubs.html">FC Milsami</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Помощь</h4><ul>
+      <li><a href="contacts.html">FAQ</a></li>
+      <li><a href="contacts.html">Возврат</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© GoalPass — <span id="footer-year">2026</span></span>
+    <a href="#">↑ Наверх</a>
+  </div>
+</footer>
+<div id="back-top"><i class="fa-solid fa-chevron-up"></i></div>
+</body>
+</html>

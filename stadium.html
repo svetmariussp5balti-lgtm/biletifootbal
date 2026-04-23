@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="../js/script.js" defer></script>
+  <title>Стадионы — GoalPass</title>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="../index.html"><span class="ball">⚽</span> Goal<span>Pass</span></a>
+  <nav id="main-nav">
+    <a href="../index.html">Главная</a>
+    <a href="matches.html">Матчи</a>
+    <a href="stadium.html" class="active">Стадион</a>
+    <a href="clubs.html">Клубы</a>
+    <a href="contacts.html">Контакты</a>
+    <a href="matches.html" class="nav-cta">Купить билет</a>
+  </nav>
+  <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></i>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="section-label">🏟 Арены</div>
+      <h1>Стадионы</h1>
+      <p>Выбери трибуну и место на схеме стадиона перед покупкой билета</p>
+    </div>
+  </div>
+
+  <section id="stadium" style="padding-top: 70px;">
+    <div class="stadium-inner" style="max-width:1200px; margin: 0 auto;">
+      <div class="stadium-visual">
+        <svg class="pitch-svg" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="280" fill="#0d2010" rx="8"/>
+          <rect x="10" y="10" width="380" height="260" fill="#0f2512" rx="4"/>
+          <line x1="200" y1="10" x2="200" y2="270" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+          <circle cx="200" cy="140" r="36" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+          <circle cx="200" cy="140" r="4" fill="rgba(255,255,255,0.25)"/>
+          <rect x="10" y="110" width="16" height="60" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+          <rect x="374" y="110" width="16" height="60" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+          <rect x="10" y="88" width="64" height="104" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+          <rect x="326" y="88" width="64" height="104" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+          <rect x="0" y="0" width="400" height="22" fill="rgba(255,214,10,0.1)" rx="8 8 0 0"/>
+          <rect x="0" y="258" width="400" height="22" fill="rgba(230,57,70,0.1)" rx="0 0 8 8"/>
+          <rect x="0" y="0" width="22" height="280" fill="rgba(29,185,84,0.08)"/>
+          <rect x="378" y="0" width="22" height="280" fill="rgba(29,185,84,0.08)"/>
+          <text x="200" y="15" fill="rgba(255,214,10,0.7)" font-size="9" text-anchor="middle" font-family="sans-serif" font-weight="bold">VIP ТРИБУНА — СЕВЕР</text>
+          <text x="200" y="273" fill="rgba(230,100,100,0.7)" font-size="9" text-anchor="middle" font-family="sans-serif">ЮЖ. ФАНАТСКАЯ</text>
+          <text x="11" y="147" fill="rgba(29,185,84,0.6)" font-size="7" text-anchor="middle" font-family="sans-serif" transform="rotate(-90,11,147)">КАТ. 1 — ЗАПАД</text>
+          <text x="389" y="147" fill="rgba(29,185,84,0.6)" font-size="7" text-anchor="middle" font-family="sans-serif" transform="rotate(90,389,147)">КАТ. 1 — ВОСТОК</text>
+        </svg>
+      </div>
+
+      <div>
+        <div class="section-label">🏟 Стадион «Шериф», Тирасполь</div>
+        <h2 class="section-title">Схема трибун</h2>
+        <p class="section-sub" style="margin-bottom: 32px;">Вместимость: 14 300 зрителей. Выбери категорию — мы покажем доступные места.</p>
+
+        <div class="zones-list">
+          <a href="matches.html" class="zone-item">
+            <div class="zone-dot dot-vip"></div>
+            <div>
+              <div class="zone-item-name">VIP / Северная трибуна</div>
+              <div class="zone-item-desc">Ряды 1–10 · Lounge-зона · Парковка включена · Буфет</div>
+            </div>
+            <div class="zone-item-price">от 900 <small>леев</small></div>
+          </a>
+          <a href="matches.html" class="zone-item">
+            <div class="zone-dot dot-cat1"></div>
+            <div>
+              <div class="zone-item-name">Категория 1 — Запад / Восток</div>
+              <div class="zone-item-desc">Боковые трибуны · Ряды 1–20 · Лучший обзор поля</div>
+            </div>
+            <div class="zone-item-price">от 400 <small>леев</small></div>
+          </a>
+          <a href="matches.html" class="zone-item">
+            <div class="zone-dot dot-cat2"></div>
+            <div>
+              <div class="zone-item-name">Категория 2 — За воротами</div>
+              <div class="zone-item-desc">Трибуны за воротами · Ряды 5–30 · Хорошая атмосфера</div>
+            </div>
+            <div class="zone-item-price">от 200 <small>леев</small></div>
+          </a>
+          <a href="matches.html" class="zone-item">
+            <div class="zone-dot dot-south"></div>
+            <div>
+              <div class="zone-item-name">Южная фанатская трибуна</div>
+              <div class="zone-item-desc">Ультрас-зона · Стоячие места · Вход только с флагами</div>
+            </div>
+            <div class="zone-item-price">от 100 <small>леев</small></div>
+          </a>
+        </div>
+
+        <div style="margin-top: 32px; padding: 20px; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 8px;">
+          <div style="font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;">📍 Адрес стадиона</div>
+          <p style="font-size: 15px; color: var(--text); line-height: 1.6;">ул. Октябрьской Революции, 1, Тирасполь, Молдова<br>
+          <span style="color: var(--muted); font-size: 13px;">Ворота открываются за 90 минут до начала матча</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="../index.html"><span class="ball">⚽</span> Goal<span>Pass</span></a>
+      <p>Официальная платформа продажи билетов.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="matches.html">Матчи</a></li>
+        <li><a href="stadium.html">Стадион</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer-col"><h4>Стадионы</h4><ul>
+      <li><a href="stadium.html">Стадион Шериф</a></li>
+      <li><a href="stadium.html">Стадион Зимбру</a></li>
+      <li><a href="stadium.html">Стадион Спартак</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Помощь</h4><ul>
+      <li><a href="contacts.html">FAQ</a></li>
+      <li><a href="contacts.html">Возврат</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© GoalPass — <span id="footer-year">2026</span></span>
+    <a href="#">↑ Наверх</a>
+  </div>
+</footer>
+<div id="back-top"><i class="fa-solid fa-chevron-up"></i></div>
+</body>
+</html>
